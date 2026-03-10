@@ -88,7 +88,28 @@ public class Examen_T3 {
 	
 	// EJERCICIO 3
 	public static esPosicionValida (scanner, mensaje) {
-		
+		function esPosicionValida(sala, fila, columna) {
+    // Verificar si 'fila' está dentro del rango
+    if (fila < 0 || fila >= sala.length) {
+        return false;
+    }
+    // Verificar si 'columna' está dentro del rango
+    if (columna < 0 || columna >= sala[fila].length) {
+        return false;
+    }
+    return true;
+}
+
+// Ejemplo de uso:
+const sala = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+];
+
+console.log(esPosicionValida(sala, 1, 2)); // true
+console.log(esPosicionValida(sala, 3, 0)); // false
+console.log(esPosicionValida(sala, 0, -1)); // false
 
     }
 	
