@@ -41,7 +41,7 @@ public class Examen_T3 {
 	    }
 		
 	    public static void oncionUsuario() {
-	    if (opcionUsuario > 0 && opcionUsuario < 8))
+	    if (opcionUsuario > 0 && opcionUsuario < 8)) {
 	    switch (opcionUsuario) {
 	            case 1:
 	            	pintarSala(sala);
